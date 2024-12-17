@@ -1,1 +1,1 @@
-# mini-ecommerce
+# An e-commerce project
