@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #70a3b7;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -67,12 +67,12 @@ body {
 }
 
 nav {
-  background-color: #232f3e;
+  background-color: #386397;
   padding: 1rem 1rem;
 }
 
 #search_btn {
-  background-color: #febd69;
+  background-color: #92bdd3;
 }
 
 .input-group {
@@ -87,28 +87,31 @@ nav {
 
 #login_btn,
 #view_btn {
-  background-color: #febd69;
+  background-color: #82caec;
   padding: 0.4rem 1.8rem;
   font-family: calibri;
 }
 
 #cart {
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: white;
 }
 
 #cart_count {
-  background-color: #febd69;
-  padding: 0.2rem 0.5rem;
+  background-color: #82bfde;
+  padding: 0.3rem 0.5rem;
   border-radius: 0.2rem;
   color: black;
   font-weight: bold;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
 }
 
 /* Home page */
 #products_heading {
   margin-top: 1.8rem;
+  color: rgb(64, 60, 116);
+  font-weight: bold;
+  font-style:oblique;
 }
 
 .card {
@@ -120,7 +123,7 @@ nav {
 }
 
 .card-title a:hover {
-  color: #fa9c23;
+  color: #386397;
   text-decoration: none;
 }
 
@@ -133,7 +136,7 @@ nav {
 }
 
 #view_btn {
-  background-color: #fa9c23;
+  background-color:#386397;
   color: white;
 }
 
@@ -144,7 +147,7 @@ nav {
 
 .ratings {
   font-size: 1.2rem;
-  color: #fdcc0d;
+  color: #92bdd3;
 }
 
 #no_of_reviews {
@@ -156,7 +159,7 @@ nav {
 /* Footer */
 footer {
   margin-top: 8rem;
-  color: grey;
+  color: rgb(48, 75, 91);
   bottom: 0;
   width: 100%;
 }
@@ -167,7 +170,7 @@ footer {
   display: inline-block;
   position: relative;
   font-family: FontAwesome;
-  color: #fdcc0d;
+  color: #386397;
 }
 
 .rating-outer::before {
@@ -185,7 +188,7 @@ footer {
 
 .rating-inner::before {
   content: '\f005 \f005 \f005 \f005 \f005';
-  color: #f8ce0b;
+  color: #4c91b3;
 }
 
 /* Product Details Page */
@@ -202,7 +205,7 @@ footer {
 #cart_btn,
 #review_btn {
   border-radius: 2rem;
-  background-color: #fa9c23;
+  background-color: #386397;
   border: none;
   padding: 0.5rem 2rem;
 }
@@ -247,8 +250,8 @@ footer {
   height: 64px;
   margin: 8px;
   border-radius: 50%;
-  border: 6px solid #fa9c23;
-  border-color: #fa9c23 transparent;
+  border: 6px solid #386397;
+  border-color: #386397 transparent;
   animation: lds-dual-ring 1.2s linear infinite;
 }
 @keyframes lds-dual-ring {
@@ -280,22 +283,22 @@ footer {
 }
 
 #card_item_price {
-  color: #febd69;
+  color: #386397;
   font-weight: bold;
   font-size: 1.4rem;
 }
 
 #checkout_btn,
 .review-btn {
-  background-color: #fa9c23;
-  border-color: #fa9c23;
+  background-color: #386397;
+  border-color: #386397;
   margin-top: 2rem;
   border-radius: 5rem;
 }
 
 #view_order_details {
-  background-color: #fa9c23;
-  border-color: #fa9c23;
+  background-color: #386397;
+  border-color: #386397;
 }
 
 #order_summary {
@@ -347,8 +350,8 @@ footer {
 }
 
 .wrapper form .btn {
-  background-color: #fa9c23;
-  border-color: #fa9c23;
+  background-color: #1e5379;
+  border-color: #4952ad;
   color: white;
   margin-top: 2.5rem;
 }
@@ -427,7 +430,7 @@ footer {
 }
 
 .active-step {
-  background: #fa9c23;
+  background: #513bbf;
   color: #fff;
 }
 
@@ -435,7 +438,7 @@ footer {
   float: left;
   width: 0;
   border-top: 20px solid transparent;
-  border-left: 15px solid #fa9c23;
+  border-left: 15px solid #6c62c0;
   border-bottom: 20px solid transparent;
   margin-left: -1px;
 }
@@ -443,9 +446,9 @@ footer {
 .triangle2-active {
   width: 0;
   float: left;
-  border-top: 20px solid #fa9c23;
+  border-top: 20px solid #5460cf;
   border-left: 15px solid #fff;
-  border-bottom: 20px solid #fa9c23;
+  border-bottom: 20px solid #6d6dcd;
   margin-right: -1px;
 }
 
@@ -485,8 +488,8 @@ footer {
 }
 
 #edit_profile {
-  background-color: #fa9c23;
-  border-color: #fa9c23;
+  background-color: #3c35c8;
+  border-color: #4c45c5;
 }
 
 /* Confirm Order */
@@ -497,8 +500,8 @@ footer {
 }
 
 .update-btn {
-  background-color: #fa9c23;
-  border-color: #fa9c23;
+  background-color: #3331a8;
+  border-color: #413fba;
   color: white;
 }
 
@@ -508,16 +511,16 @@ footer {
 
 /* Pagination */
 .page-item.active .page-link {
-  background-color: #fa9c23;
-  border-color: #fa9c23;
+  background-color: #4048b3;
+  border-color: #4048b3;
 }
 
 .page-link {
-  color: #fa9c23;
+  color: #4048b3;
 }
 
 .page-link:hover {
-  color: #fa9c23;
+  color: #4048b3;
 }
 
 /* Admin Sidebar */
@@ -643,11 +646,11 @@ ul.CTAs a {
 }
 
 .orange {
-  color: #fa9c23;
+  color: #4048b3;
 }
 
 .yellow {
-  color: #fdcc0d;
+  color: #4048b3;
 }
 
 .review_user {

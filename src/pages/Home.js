@@ -13,7 +13,7 @@ export default function Home() {
     },[searchParams])      //whenever searchparams value is changed by enter the item in search bar, the use effect will be called and that will be shown on page
 
     return <Fragment>
-        <h1 id="products_heading">Latest Products</h1>
+        <h1 id="products_heading">Welcome to our mobile store!</h1>
 
         <section id="products" className="container mt-5">
         <div className="row">

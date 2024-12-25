@@ -17,7 +17,7 @@ function App() {
         <Router>
           <div>
             <ToastContainer theme='dark' position='top-center' />
-            <Header cartItems={cartItems} />
+            <Header cartItems={cartItems} />                                 
             <Routes>
                 <Route path="/"  element={ <Home />}/>
                 <Route path="/search"  element={ <Home />}/>

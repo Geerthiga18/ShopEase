@@ -13,7 +13,7 @@ export default function Cart({cartItems, setCartItems}) {
             if(i.product._id == item.product._id) {
                 i.qty++
             }
-            return i;
+            return i;       
         })
         setCartItems(updatedItems)
     }
@@ -23,34 +23,34 @@ export default function Cart({cartItems, setCartItems}) {
             const updatedItems = cartItems.map((i) => {
                 if(i.product._id == item.product._id) {
                     i.qty--
-                }
-                return i;
-            })
-            setCartItems(updatedItems)
-        }
-    }
+                } 
+                return i;     
+            })      
+            setCartItems(updatedItems) 
+        }  
+    }    
 
-    function removeItem(item) {
+    function removeItem(item) { 
         const updatedItems = cartItems.filter((i) => {
             if(i.product._id !== item.product._id) {
                 return true;
             }
         })
-        setCartItems(updatedItems)
-    }
+        setCartItems(updatedItems) 
+    } 
 
-    function placeOrderHandler() {
+    function placeOrderHandler() { 
         fetch(process.env.REACT_APP_API_URL+'/order', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(cartItems)
-        })
+        }) 
         .then(() => { 
             setCartItems([]); 
             setComplete(true);
             toast.success("Order Success!")
         })
-    }
+    } 
 
 
 
@@ -90,29 +90,29 @@ export default function Cart({cartItems, setCartItems}) {
                                             <i id="delete_cart_item" onClick={() => removeItem(item)} class="fa fa-trash btn btn-danger"></i>
                                         </div>
 
-                                    </div>
-                                </div>
-                            </Fragment>)
-                            )}
-                        
-                        </div>
+                                    </div> 
+                                </div> 
+                            </Fragment>) 
+                            )}  
+                               
+                        </div>  
 
-                        <div class="col-12 col-lg-3 my-4">
-                            <div id="order_summary">
-                                <h4>Order Summary</h4>
-                                <hr />
+                        <div class="col-12 col-lg-3 my-4">    
+                            <div id="order_summary">    
+                                <h4>Order Details</h4>   
+                                <hr />                      
                                 <p>Subtotal:  <span class="order-summary-values">{cartItems.reduce((acc,item)=> (acc + item.qty), 0)} (Units)</span></p>
                                 <p>Est. total: <span class="order-summary-values">${Number(cartItems.reduce((acc,item)=> (acc + item.product.price * item.qty), 0)).toFixed(2)}</span></p>
 
                                 <hr />
-                                <button id="checkout_btn" onClick={placeOrderHandler} class="btn btn-primary btn-block">Place Order</button>
+                                <button id="checkout_btn" onClick={placeOrderHandler} class="btn btn-primary btn-block">Place your order</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </Fragment> : (!complete ? <h2 className='mt-5'>Your Cart is Empty!</h2> 
             : <Fragment>
-                <h2 className='mt-5'>Order Complete!</h2>
+                <h2 className='mt-5'>Order is completed!</h2>
                 <p>Your order has been placed succesfully.</p>
             </Fragment>)
 }
